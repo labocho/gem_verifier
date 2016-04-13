@@ -1,5 +1,6 @@
 require "gem_verifier/version"
 
 module GemVerifier
-  # Your code goes here...
+  require "gem_verifier/cli"
+  require "gem_verifier/verifier"
 end

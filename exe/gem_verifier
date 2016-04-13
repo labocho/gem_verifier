@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+require "gem_verifier"
+GemVerifier::CLI.start(ARGV)
