@@ -13,67 +13,68 @@ Compare gem on rubygems.org and source on git repository as follow.
 
 ## Installation
 
-  $ git clone https://github.com/labocho/gem_verifier.git
-  $ cd gem_verifier
-  $ rake install
+    $ git clone https://github.com/labocho/gem_verifier.git
+    $ cd gem_verifier
+    $ rake install
 
 ## Usage
 
-  $ gem_verifier GEM_NAME GEM_REPOSITORY_URL
+    $ gem_verifier GEM_NAME GEM_REPOSITORY_URL
 
-  # Example
-  $ gem_verifier pagehook-rails https://github.com/labocho/pagehook-rails.git
-  Work in /var/folders/wx/5tjkwlx96tx38cpj2d_fn5z80000gn/T/d20160413-45274-1d9s4th
-  Clone repository https://github.com/labocho/pagehook-rails.git to repo
-  git clone https://github.com/labocho/pagehook-rails.git repo
-  Get gem versions
-  ------------------------------
-  Verify 0.0.5
-  git checkout v0.0.5
-  rm -f gem.gem
-  rm -rf gem
-  Download gem 0.0.5 to gem.gem
-  gem unpack gem.gem
-  diff -ru repo gem
-  ------------------------------
-  Verify 0.0.4
-  git checkout v0.0.4
-  rm -f gem.gem
-  rm -rf gem
-  Download gem 0.0.4 to gem.gem
-  gem unpack gem.gem
-  diff -ru repo gem
-  ------------------------------
-  Verify 0.0.3
-  git checkout v0.0.3
-  rm -f gem.gem
-  rm -rf gem
-  Download gem 0.0.3 to gem.gem
-  gem unpack gem.gem
-  diff -ru repo gem
-  ------------------------------
-  Verify 0.0.2
-  git checkout v0.0.2
-  rm -f gem.gem
-  rm -rf gem
-  Download gem 0.0.2 to gem.gem
-  gem unpack gem.gem
-  diff -ru repo gem
-  ------------------------------
-  Verify 0.0.1
-  git checkout v0.0.1
-  rm -f gem.gem
-  rm -rf gem
-  Download gem 0.0.1 to gem.gem
-  gem unpack gem.gem
-  diff -ru repo gem
-  {
-    "0.0.5": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n",
-    "0.0.4": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n",
-    "0.0.3": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n",
-    "0.0.2": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n",
-    "0.0.1": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n"
-  }
+Example:
+
+    $ gem_verifier pagehook-rails https://github.com/labocho/pagehook-rails.git
+    Work in /var/folders/wx/5tjkwlx96tx38cpj2d_fn5z80000gn/T/d20160413-45274-1d9s4th
+    Clone repository https://github.com/labocho/pagehook-rails.git to repo
+    git clone https://github.com/labocho/pagehook-rails.git repo
+    Get gem versions
+    ------------------------------
+    Verify 0.0.5
+    git checkout v0.0.5
+    rm -f gem.gem
+    rm -rf gem
+    Download gem 0.0.5 to gem.gem
+    gem unpack gem.gem
+    diff -ru repo gem
+    ------------------------------
+    Verify 0.0.4
+    git checkout v0.0.4
+    rm -f gem.gem
+    rm -rf gem
+    Download gem 0.0.4 to gem.gem
+    gem unpack gem.gem
+    diff -ru repo gem
+    ------------------------------
+    Verify 0.0.3
+    git checkout v0.0.3
+    rm -f gem.gem
+    rm -rf gem
+    Download gem 0.0.3 to gem.gem
+    gem unpack gem.gem
+    diff -ru repo gem
+    ------------------------------
+    Verify 0.0.2
+    git checkout v0.0.2
+    rm -f gem.gem
+    rm -rf gem
+    Download gem 0.0.2 to gem.gem
+    gem unpack gem.gem
+    diff -ru repo gem
+    ------------------------------
+    Verify 0.0.1
+    git checkout v0.0.1
+    rm -f gem.gem
+    rm -rf gem
+    Download gem 0.0.1 to gem.gem
+    gem unpack gem.gem
+    diff -ru repo gem
+    {
+      "0.0.5": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n",
+      "0.0.4": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n",
+      "0.0.3": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n",
+      "0.0.2": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n",
+      "0.0.1": "Only in repo: .git\nOnly in repo: .gitignore\nOnly in repo: Gemfile\nOnly in repo: Gemfile.lock\nOnly in repo: pagehook-rails.gemspec\nOnly in repo: script\nOnly in repo: spec\n"
+    }
 
 ## Development
 
